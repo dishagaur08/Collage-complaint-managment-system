@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Complaint Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>College Complaint Management System</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Register Complaint</h2>
+            <input id="name" placeholder="Enter your name">
+            <input id="contact" placeholder="Enter contact number">
+            <textarea id="issue" placeholder="Enter your issue"></textarea>
+            <button onclick="registerComplaint()">Submit</button>
+            <p id="registerMsg"></p>
+        </div>
+
+        <div class="card">
+            <h2>Search Complaint</h2>
+            <input id="searchId" placeholder="Enter Complaint ID">
+            <button onclick="searchComplaint()">Search</button>
+            <pre id="searchResult"></pre>
+        </div>
+
+        <div class="card">
+            <h2>All Complaints</h2>
+            <button onclick="getAllComplaints()">Show List</button>
+            <pre id="allComplaints"></pre>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
